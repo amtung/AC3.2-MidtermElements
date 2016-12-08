@@ -31,9 +31,9 @@ class DetailViewController: UIViewController {
         symbolLabel.text = validElement.symbol
         numberLabel.text = String(validElement.number)
         weightLabel.text = String(validElement.weight)
+        discoverYearLabel.text = "Discovery year: \(validElement.discovery_year)"
         meltingLabel.text = "Melting pt: \(String(validElement.melting_c))"
         boilingLabel.text = "Boiling pt: \(String(validElement.boiling_c))"
-        discoverYearLabel.text = "Discovery year: \(validElement.discovery_year)"
         
         
         APIRequestManager.manager.getData(endPoint: validElement.fullImage) { (data: Data?) in
