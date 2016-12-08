@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "12744FD173829C75E5D3BBD285A46DD955DA8BD0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807,
+    "12744FD173829C75E5D3BBD285A46DD955DA8BD0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48DB49E3-A3B4-4220-AD91-5009A1FDCF87",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : "",
+    "12744FD173829C75E5D3BBD285A46DD955DA8BD0" : "AC3.2-MidtermElements\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AC3.2-MidtermElements",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AC3.2-MidtermElements\/AC3.2-MidtermElements.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amtung\/AC3.2-MidtermElements.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12744FD173829C75E5D3BBD285A46DD955DA8BD0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amtung\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+    }
+  ]
+}
