@@ -1,14 +1,14 @@
 //
-//  ElementTableViewController.swift
+//  AnotherOneTableViewController.swift
 //  AC3.2-MidtermElements
 //
-//  Created by Jason Gresh on 12/7/16.
+//  Created by Annie Tung on 12/15/16.
 //  Copyright © 2016 C4Q. All rights reserved.
 //
 
 import UIKit
 
-class ElementTableViewController: UITableViewController {
+class AnotherOneTableViewController: UITableViewController {
     var elements = [Element]()
     
     override func viewDidLoad() {
@@ -17,6 +17,10 @@ class ElementTableViewController: UITableViewController {
         self.title = "The Elements"
         
         getData()
+        
+        
+        tableView.register(UINib(nibName: "AnotherOneTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "cell")
+        
     }
     
     func getData() {
@@ -36,21 +40,21 @@ class ElementTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.elements.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "elementCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AnotherOneTableViewCell
+        
         let element = self.elements[indexPath.row]
         cell.textLabel?.text = element.name
-        cell.detailTextLabel?.text = "\(element.symbol)(\(element.number)) \(element.weight)"
+       // cell.detailLabel?.text = "\(element.symbol)(\(element.number)) \(element.weight)"
         cell.imageView?.image = nil
         
         APIRequestManager.manager.getData(endPoint: "https://s3.amazonaws.com/ac3.2-elements/\(element.symbol)_200.png") { data in
@@ -63,11 +67,10 @@ class ElementTableViewController: UITableViewController {
                 }
             }
         }
-
+        
         return cell
     }
     
-    // THIS WILL SEGUE
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "elementViewController") as! ElementViewController
@@ -75,13 +78,14 @@ class ElementTableViewController: UITableViewController {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    /// MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let evc = segue.destination as? ElementViewController,
-//            let cell = sender as? UITableViewCell,
-//            let ip = tableView.indexPath(for: cell) {
-//            evc.element = elements[ip.row]
-//        }
-//    }
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

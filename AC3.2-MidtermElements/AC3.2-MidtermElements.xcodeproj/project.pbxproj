@@ -15,6 +15,9 @@
 		1E74BF131DF91A210045CF29 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74BF121DF91A210045CF29 /* APIRequestManager.swift */; };
 		1E74BF151DF91EED0045CF29 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74BF141DF91EED0045CF29 /* Element.swift */; };
 		1E74BF171DF929270045CF29 /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74BF161DF929270045CF29 /* ElementViewController.swift */; };
+		9C439BD01E03133B006F8634 /* AnotherOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C439BCF1E03133B006F8634 /* AnotherOneTableViewController.swift */; };
+		9C439BD31E0313F8006F8634 /* AnotherOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C439BD11E0313F8006F8634 /* AnotherOneTableViewCell.swift */; };
+		9C439BD41E0313F8006F8634 /* AnotherOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C439BD21E0313F8006F8634 /* AnotherOneTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1E74BF121DF91A210045CF29 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		1E74BF141DF91EED0045CF29 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		1E74BF161DF929270045CF29 /* ElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
+		9C439BCF1E03133B006F8634 /* AnotherOneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherOneTableViewController.swift; sourceTree = "<group>"; };
+		9C439BD11E0313F8006F8634 /* AnotherOneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherOneTableViewCell.swift; sourceTree = "<group>"; };
+		9C439BD21E0313F8006F8634 /* AnotherOneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherOneTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +67,59 @@
 			isa = PBXGroup;
 			children = (
 				1E74BEFE1DF919B70045CF29 /* AppDelegate.swift */,
-				1E74BF101DF919FC0045CF29 /* ElementTableViewController.swift */,
-				1E74BF121DF91A210045CF29 /* APIRequestManager.swift */,
-				1E74BF021DF919B70045CF29 /* Main.storyboard */,
-				1E74BF051DF919B70045CF29 /* Assets.xcassets */,
-				1E74BF071DF919B70045CF29 /* LaunchScreen.storyboard */,
-				1E74BF0A1DF919B70045CF29 /* Info.plist */,
-				1E74BF141DF91EED0045CF29 /* Element.swift */,
-				1E74BF161DF929270045CF29 /* ElementViewController.swift */,
+				9C439BD21E0313F8006F8634 /* AnotherOneTableViewCell.xib */,
+				9C439BD91E031425006F8634 /* Model */,
+				9C439BD51E031409006F8634 /* ViewController */,
+				9C439BD71E03141B006F8634 /* APIManager */,
+				9C439BD61E031411006F8634 /* Storyboard */,
+				9C439BD81E031420006F8634 /* Helper */,
 			);
 			path = "AC3.2-MidtermElements";
+			sourceTree = "<group>";
+		};
+		9C439BD51E031409006F8634 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C439BCF1E03133B006F8634 /* AnotherOneTableViewController.swift */,
+				9C439BD11E0313F8006F8634 /* AnotherOneTableViewCell.swift */,
+				1E74BF101DF919FC0045CF29 /* ElementTableViewController.swift */,
+				1E74BF161DF929270045CF29 /* ElementViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9C439BD61E031411006F8634 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1E74BF071DF919B70045CF29 /* LaunchScreen.storyboard */,
+				1E74BF021DF919B70045CF29 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		9C439BD71E03141B006F8634 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E74BF121DF91A210045CF29 /* APIRequestManager.swift */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		9C439BD81E031420006F8634 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1E74BF0A1DF919B70045CF29 /* Info.plist */,
+				1E74BF051DF919B70045CF29 /* Assets.xcassets */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		9C439BD91E031425006F8634 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E74BF141DF91EED0045CF29 /* Element.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +183,7 @@
 			files = (
 				1E74BF091DF919B70045CF29 /* LaunchScreen.storyboard in Resources */,
 				1E74BF061DF919B70045CF29 /* Assets.xcassets in Resources */,
+				9C439BD41E0313F8006F8634 /* AnotherOneTableViewCell.xib in Resources */,
 				1E74BF041DF919B70045CF29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,11 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C439BD01E03133B006F8634 /* AnotherOneTableViewController.swift in Sources */,
 				1E74BF171DF929270045CF29 /* ElementViewController.swift in Sources */,
 				1E74BF131DF91A210045CF29 /* APIRequestManager.swift in Sources */,
 				1E74BF111DF919FC0045CF29 /* ElementTableViewController.swift in Sources */,
 				1E74BF151DF91EED0045CF29 /* Element.swift in Sources */,
 				1E74BEFF1DF919B70045CF29 /* AppDelegate.swift in Sources */,
+				9C439BD31E0313F8006F8634 /* AnotherOneTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -311,6 +363,7 @@
 				1E74BF0F1DF919B70045CF29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
